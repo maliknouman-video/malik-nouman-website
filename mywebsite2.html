@@ -1,0 +1,321 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malik Nouman | Video Editor</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #07111f;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8%;
+    background: #0b1220;
+    border-bottom: 1px solid #1e293b;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #38bdf8;
+    border-radius: 50%;
+    color: #38bdf8;
+    font-size: 21px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px #38bdf8;
+    box-shadow: 0 0 12px #38bdf8;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.hero {
+    padding: 100px 20px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+    text-shadow: 0 0 15px #38bdf8;
+}
+
+.hero h2 {
+    font-size: 26px;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    color: #0b1220;
+    background: #38bdf8;
+    padding: 12px 25px;
+    margin: 8px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    box-shadow: 0 0 20px #38bdf8;
+    transform: translateY(-3px);
+}
+
+#about h2,
+#work h2,
+#contact h2 {
+    color: #38bdf8;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.card {
+    max-width: 700px;
+    margin: 15px auto;
+    padding: 30px;
+    background: #111c2e;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.12);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 0 22px rgba(56, 189, 248, 0.25);
+}
+
+.card p {
+    font-size: 17px;
+}
+
+.whatsapp {
+    background: #22c55e;
+    color: white;
+}
+
+.whatsapp:hover {
+    background: #15803d;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0d1b2e;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+}
+```css
+.hero h1 span {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #38bdf8;
+    }
+    to {
+        text-shadow: 0 0 25px #38bdf8, 0 0 40px #0284c7;
+    }
+}
+```
+```css
+.logo {
+    animation: logoGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes logoGlow {
+    from {
+        box-shadow: 0 0 5px #38bdf8;
+    }
+    to {
+        box-shadow: 0 0 25px #38bdf8,
+                    0 0 40px #0284c7;
+    }
+}
+```
+```css
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 20px #38bdf8;
+}
+```
+```css
+#work .card {
+    position: relative;
+    overflow: hidden;
+}
+
+#work .card h3 {
+    color: #38bdf8;
+    transition: 0.3s ease;
+}
+
+#work .card:hover h3 {
+    transform: scale(1.08);
+    text-shadow: 0 0 15px #38bdf8;
+}
+
+#work .card p {
+    transition: 0.3s ease;
+}
+
+#work .card:hover p {
+    color: white;
+}
+```
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MN</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">My Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>I'm <span>Malik Nouman</span></h1>
+    <h2>Video Editor & Content Creator</h2>
+    <p>I create amazing videos and creative content.</p>
+    <a class="btn" href="#work">My Work</a>
+    <a class="btn" href="#contact">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            Hello! I'm Malik Nouman, a video editor and content creator.
+            I love creating engaging videos and social media content.
+        </p>
+    </div>
+</section>
+
+<section id="work">
+    <h2>My Work</h2>
+
+    <div class="card">
+        <h3>🎬 Video Editing</h3>
+        <p>Creative video editing and amazing effects.</p>
+    </div>
+
+    <div class="card">
+        <h3>📱 Social Media Content</h3>
+        <p>Videos for YouTube, TikTok and Instagram.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+        <p>Need a video editor? Let's work together!</p>
+
+        <a class="btn whatsapp"
+           href="https://wa.me/923032991771"
+           target="_blank" rel="noopener noreferrer">
+           Chat with me on WhatsApp
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Malik Nouman | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+```
